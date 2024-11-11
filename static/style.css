@@ -44,32 +44,6 @@ body {
   clear: both;
 }
 
-/* #menu {
-  float: left;
-  margin-top: 30px;
-  margin-right: 20px;
-  text-align: left;
-  width: 150px;
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
-}
-
-#menu .title {
-}
-
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#menu li {
-}
-
-#menu li a {
-  display: inline-block;
-  color: #0864c7;
-} */
-
 .white {
   color: white !important;
 }
@@ -124,7 +98,7 @@ ul ul {
   margin-bottom: 0.6em;
 }
 
-.post+.post {
+.post + .post {
   margin-top: 50px;
 }
 
@@ -137,4 +111,51 @@ sub {
 
 sub {
   top: 0.4em;
+}
+
+/* Project Page Styling */
+.project {
+  margin-bottom: 40px;
+}
+
+.project-title {
+  font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+.project-description {
+  font-size: 13px;
+  color: #333;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.project-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-image,
+.project-video {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+}
+
+.project-media-row {
+  display: flex;
+  gap: 10px;
+}
+
+.project-media-row .project-image {
+  width: 48%; /* Ensures each image takes about half the row's width */
+  flex: none; /* Prevents images from expanding beyond their defined width */
+}
+
+.back-button {
+  padding-bottom: 60px;
 }
